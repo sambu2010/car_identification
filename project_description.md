@@ -15,9 +15,13 @@ Dataset consists of 8218 pictures of 100 different classes of cars. All pictures
 ### Algorithms
 
 Data is inspected after acquisition (images quality, folders structure)
+
 Data is preproccesed using ImageDataGenerator. 
+
 Baseline model is build using CNN. Baseline model consists of input layer, 3 sets of convolutional and max pooling layers, and 2 fully connected dense layers at the top. The accuracy of a base model is very low (~0,3).
+
 Transfer learning is applied (InceptionV3 with the pretrained imagenet weights).
+
 Tuning of the pretrained model is done after training to improve results (optimizer, batch size, learning rate, regularization tuning)
 
 ### Tools
